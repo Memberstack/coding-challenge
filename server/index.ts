@@ -9,3 +9,5 @@ Create at least 2 endpoints here that the frontend can use:
 
 You can decide how you want to save the returned data from either Paypal or Stripe to a member.
 */
+
+app.listen(5000);
