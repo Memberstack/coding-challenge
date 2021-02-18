@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "sourceMap": false,
+    "outDir": "build",
+    "target": "es5",
+    "lib": ["es2019", "dom"],
+    "strict": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "rootDir": "./",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "baseUrl": "./"
+  },
+  "include": ["src", "utils"],
+  "exclude": ["node_modules"]
+}
