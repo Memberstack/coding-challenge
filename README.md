@@ -9,17 +9,17 @@ This repo consists of two folders:
 
 In order to get started with the client, you can run:
 
-```
+```bash
 $ cd client
-$ yarn (or npm install)
+$ yarn install
 $ yarn start
 ```
 
 In order to get started with the server, you can run:
 
-```
+```bash
 $ cd server
-$ yarn (or npm install)
+$ yarn install
 $ ts-node index.ts
 ```
 
