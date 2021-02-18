@@ -4,8 +4,7 @@ export const PaypalProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <PayPalScriptProvider
       options={{
-        "client-id":
-          "AUI6YjKxhzpZWyPHtD1cw_FIKhPPtwbFxwhnwcAGvn7hKT6FmShUEnATo8jYd6-3cmBxfaqpPQWINKpb",
+        "client-id": "",
       }}
     >
       {children}
