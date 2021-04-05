@@ -12,6 +12,30 @@
           "currency": "USD"
         }
       ]
+    },
+    {
+      "id": "pln_2",
+      "name": "Medium Plan",
+      "description": "Get access to some items.",
+      "paymentOptions": [
+        {
+          "type": "ONETIME",
+          "amount": 500,
+          "currency": "USD"
+        }
+      ]
+    },
+    {
+      "id": "pln_3",
+      "name": "Cheap Plan",
+      "description": "Get access to few items.",
+      "paymentOptions": [
+        {
+          "type": "ONETIME",
+          "amount": 50,
+          "currency": "USD"
+        }
+      ]
     }
   ]
 }
