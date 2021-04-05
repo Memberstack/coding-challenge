@@ -7,8 +7,11 @@
     "@paypal/react-paypal-js": "^4.1.1",
     "@stripe/react-stripe-js": "^1.2.2",
     "@stripe/stripe-js": "^1.12.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.0.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2"
   },
   "scripts": {
@@ -37,8 +40,9 @@
   },
   "devDependencies": {
     "@types/node": "^14.14.28",
-    "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.1",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-router-dom": "^5.1.7",
     "typescript": "^4.1.5"
   }
 }

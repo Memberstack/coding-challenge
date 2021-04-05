@@ -1,6 +1,16 @@
+import React from "react";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
+import { PaymentInput } from "./index";
 
-export const StripePaymentInput = () => {
+interface StripePaymentProps {
+  onConfirm: (data: PaymentInput) => any;
+  value: string;
+}
+
+export const StripePaymentInput: React.FC<StripePaymentProps> = ({
+  value,
+  onConfirm,
+}) => {
   const stripe = useStripe();
   const elements = useElements();
 
@@ -10,15 +20,19 @@ export const StripePaymentInput = () => {
     }
 
     const cardElement = elements.getElement(CardElement);
-
     if (cardElement === null) return;
 
-    const { error, paymentMethod } = await stripe.createPaymentMethod({
+    const { paymentMethod } = await stripe.createPaymentMethod({
       type: "card",
       card: cardElement,
     });
 
-    // Handle payment with the returned payment method id.
+    const result = await onConfirm({
+      value,
+      token: (paymentMethod && paymentMethod.id) || "",
+      type: "stripe",
+    });
+    console.log("result", result);
   };
 
   return (
@@ -39,7 +53,9 @@ export const StripePaymentInput = () => {
           },
         }}
       />
-      <button onClick={handleClick}>Pay</button>
+      <button disabled={!value} onClick={handleClick}>
+        Pay
+      </button>
     </div>
   );
 };
