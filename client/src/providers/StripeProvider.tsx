@@ -2,7 +2,7 @@ import React from "react";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 
-const stripe = loadStripe("...");
+const stripe = loadStripe("pk_test_51IK9JGGRjPUOLc3sZp1o41zxFeHcilDYOvwinEjJkh7Tz3Y14IZBprgDYdWwMBCwVHCxJsmaDtZMatUarTgzvNCG00ryh7ux3N");
 
 const StripeContext = React.createContext({ stripe });
 
